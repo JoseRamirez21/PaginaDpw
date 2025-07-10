@@ -201,7 +201,7 @@
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Plan de Estudios</a>
           <ul class="dropdown-menu shadow-lg">
             <li><a class="dropdown-item text-dark" href="malla.html">Malla Curricular</a></li>
-            <li><a class="dropdown-item text-dark" href="portafolio.html">Proyectos y Portafolio</a></li>
+           <li><a class="dropdown-item text-dark" href="proyecto.html">Proyectos y Portafolio</a></li>
           </ul>
         </li>
 
@@ -245,15 +245,19 @@
     </div>
   </div>
 </nav>
+
+
+
 <!-- SECCIÓN - SOBRE EL IESTP HUANTA -->
 <section class="py-5 bg-white position-relative overflow-hidden" id="sobre-ies-huanta">
   <div class="container position-relative z-1">
     <!-- TÍTULO -->
     <div class="text-center mb-5" data-aos="fade-up">
       <h2 class="fw-bold text-primary animate__animated animate__fadeInUp">
-        <i class="bi bi-bank2 me-2"></i>Instituto de Educación Superior Tecnológico Público Huanta
+        <i class="bi bi-bank2 me-2"></i>Instituto de Educación Superior Público Huanta
       </h2>
-      <p class="lead text-secondary">Conoce más sobre nuestra historia, misión educativa y el impacto que generamos en la región desde hace casi cuatro décadas.</p>
+      <p class="lead text-secondary">Conoce más sobre nuestra historia, misión educativa y el
+         impacto que generamos en la región desde hace casi cuatro décadas.</p>
     </div>
 
     <!-- INFORMACIÓN INSTITUCIONAL -->
@@ -261,21 +265,74 @@
       <div class="col-md-6">
         <img src="img/ieshuanta.jpg" alt="IES Huanta" class="img-fluid rounded-4 shadow">
       </div>
-      <div class="col-md-6">
-        <h4 class="fw-bold text-primary mb-3">¿Quiénes somos?</h4>
-        <p class="text-muted">
-          El <strong>IESTP Huanta</strong> es una institución educativa pública fundada hace <strong>39 años</strong>, ubicada en la ciudad de <strong>Huanta, Ayacucho, Perú</strong>. Contamos con una sólida trayectoria formando profesionales técnicos altamente competitivos.
-        </p>
-        <p class="text-muted">
-          Nuestro enfoque combina la <strong>innovación tecnológica</strong>, la <strong>formación práctica</strong> y el compromiso con el <strong>desarrollo regional</strong>, ofreciendo carreras técnicas alineadas a las demandas del mercado laboral actual.
-        </p>
-        <ul class="list-unstyled text-muted">
-          <li><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Ubicación:</strong> Jr. Francisco de Paula Otero 221, Huanta, Ayacucho</li>
-          <li><i class="bi bi-calendar-check-fill text-success me-2"></i><strong>Año de fundación:</strong> 1985</li>
-          <li><i class="bi bi-award-fill text-warning me-2"></i><strong>Modalidad:</strong> Presencial</li>
-          <li><i class="bi bi-globe text-info me-2"></i><strong>Sitio Web:</strong> <a href="#" class="text-decoration-none">www.ieshuanta.edu.pe</a></li>
-        </ul>
-      </div>
+     <div class="col-md-6">
+  <style>
+    .hover-underline {
+      position: relative;
+    }
+
+    .hover-underline::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      background-color: #0d6efd;
+      transition: width 0.3s ease;
+    }
+
+    .hover-underline:hover::after {
+      width: 100%;
+    }
+
+    .info-box {
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+
+  <div class="p-4 info-box h-100" data-aos="fade-right">
+    <h4 class="fw-bold text-primary mb-3">¿Quiénes somos?</h4>
+
+    <p class="text-muted">
+      El <strong>IESP Huanta</strong> es una institución educativa pública con <strong>39 años de trayectoria</strong>, ubicada en la ciudad de <strong>Huanta, Ayacucho, Perú</strong>. Formamos profesionales técnicos altamente competitivos y comprometidos con la excelencia.
+    </p>
+
+    <p class="text-muted">
+      Nuestro enfoque se basa en la <strong>innovación tecnológica</strong>, el aprendizaje <strong>práctico</strong> y la <strong>responsabilidad social</strong>, brindando carreras alineadas con las necesidades del mercado laboral actual y el desarrollo regional.
+    </p>
+
+    <ul class="list-unstyled text-muted mt-4">
+      <li class="mb-2">
+        <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+        <strong>Ubicación:</strong> Jr. Gral. Córdova N°650, Huanta, Ayacucho
+      </li>
+      <li class="mb-2">
+        <i class="bi bi-calendar-check-fill text-success me-2"></i>
+        <strong>Año de fundación:</strong> 1985
+      </li>
+      <li class="mb-2">
+        <i class="bi bi-award-fill text-warning me-2"></i>
+        <strong>Modalidad:</strong> Presencial
+      </li>
+      <li class="mb-2">
+        <i class="bi bi-globe text-info me-2"></i>
+        <strong>Sitio Web:</strong>
+        <a href="https://iestphuanta.edu.pe/" target="_blank" class="text-decoration-none text-primary fw-semibold hover-underline">
+          iestphuanta.edu.pe
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
     </div>
 
     <!-- CONTADORES -->
@@ -289,52 +346,121 @@
         <p class="text-muted">Egresados titulados</p>
       </div>
       <div class="col-6 col-md-3">
-        <h1 class="text-warning fw-bold">6</h1>
+        <h1 class="text-warning fw-bold">5</h1>
         <p class="text-muted">Carreras técnicas</p>
       </div>
       <div class="col-6 col-md-3">
-        <h1 class="text-info fw-bold">+80</h1>
+        <h1 class="text-info fw-bold">40</h1>
         <p class="text-muted">Docentes y personal</p>
       </div>
     </div>
 
-    <!-- LÍNEA DE TIEMPO -->
-    <div class="mb-5" data-aos="fade-up">
-      <h4 class="fw-bold text-primary mb-4"><i class="bi bi-clock-history me-2"></i>Nuestra Historia</h4>
-      <ul class="timeline list-unstyled">
-        <li class="mb-4">
-          <span class="fw-bold text-success">1985</span> – Fundación del Instituto como centro técnico de nivel superior.
-        </li>
-        <li class="mb-4">
-          <span class="fw-bold text-success">2000</span> – Reconocimiento como Institución Pública de Prestigio en Ayacucho.
-        </li>
-        <li class="mb-4">
-          <span class="fw-bold text-success">2021</span> – Se incorpora la carrera de Diseño y Programación Web.
-        </li>
-        <li>
-          <span class="fw-bold text-success">2023</span> – Primera promoción de egresados en la especialidad de Diseño y Programación Web.
-        </li>
-      </ul>
-    </div>
+ <!-- LÍNEA DE TIEMPO -->
+<div class="mb-5" data-aos="fade-up">
+  <h4 class="fw-bold text-primary mb-4">
+    <i class="bi bi-clock-history me-2"></i>Nuestra Historia del Programa de Estudios
+  </h4>
+
+  <ul class="timeline-custom list-unstyled position-relative ps-3">
+    <li class="mb-4" data-aos="fade-right" data-aos-delay="100">
+      <div class="badge bg-success text-white rounded-pill px-3 py-1 mb-1">1985</div>
+      Fundación del Instituto como centro técnico de nivel superior.
+    </li>
+
+    <li class="mb-4" data-aos="fade-right" data-aos-delay="200">
+      <div class="badge bg-success text-white rounded-pill px-3 py-1 mb-1">2000</div>
+      Reconocimiento como Institución Pública de Prestigio en Ayacucho.
+    </li>
+
+    <li class="mb-4" data-aos="fade-right" data-aos-delay="300">
+      <div class="badge bg-success text-white rounded-pill px-3 py-1 mb-1">2021</div>
+      Se incorpora la carrera de Diseño y Programación Web.
+    </li>
+
+    <li data-aos="fade-right" data-aos-delay="400">
+      <div class="badge bg-success text-white rounded-pill px-3 py-1 mb-1">2023</div>
+      Primera promoción de egresados en la especialidad de Diseño y Programación Web.
+    </li>
+  </ul>
+</div>
+
+<!-- ESTILO CSS INTEGRADO -->
+<style>
+  .timeline-custom {
+    border-left: 3px solid #0d6efd;
+    padding-left: 1rem;
+  }
+
+  .timeline-custom li {
+    position: relative;
+    padding-left: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-custom li::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px white;
+    border: 2px solid white;
+  }
+
+  .timeline-custom li:hover {
+    transform: translateX(5px);
+    color: #0d6efd;
+  }
+</style>
+
 
     <!-- ENLACES INSTITUCIONALES -->
-    <div class="row mt-5 pt-4 border-top" data-aos="fade-up">
-      <div class="col-md-6">
-        <h4 class="fw-bold text-primary mb-3"><i class="bi bi-link-45deg me-2"></i>Enlaces Institucionales</h4>
-        <ul class="list-unstyled">
-          <li class="mb-2">
-            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-house-door-fill text-primary me-2"></i>Página Principal del IESTP Huanta</a>
-          </li>
-          <li class="mb-2">
-            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-grid-3x3-gap-fill text-primary me-2"></i>Programas Académicos</a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-laptop-fill text-primary me-2"></i>Aula Virtual</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <img src="img/ubicacion-mapa.jpg" alt="Ubicación del Instituto" class="img-fluid rounded-4 shadow">
+    <div class="row mt-5 pt-4 border-top justify-content-center" data-aos="fade-up">
+  <div class="col-md-6 text-center">
+    <h4 class="fw-bold text-primary mb-3">
+      <i class="bi bi-link-45deg me-2"></i>Enlaces Institucionales
+    </h4>
+    <ul class="list-unstyled">
+      <li class="mb-2">
+        <a href="index.html" class="text-decoration-none text-dark d-inline-block">
+          <i class="bi bi-house-door-fill text-primary me-2"></i>Página Principal del IESP Huanta
+        </a>
+      </li>
+      <li class="mb-2">
+        <a href="index.html" class="text-decoration-none text-dark d-inline-block">
+          <i class="bi bi-grid-3x3-gap-fill text-primary me-2"></i>Programas Académicos
+        </a>
+      </li>
+      <li>
+        <a href="index.html" class="text-decoration-none text-dark d-inline-block">
+          <i class="bi bi-laptop-fill text-primary me-2"></i>Aula Virtual
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row justify-content-center mt-5" data-aos="fade-up">
+  <div class="col-md-6 text-center">
+    <h4 class="fw-bold text-primary mb-4">
+      <i class="bi bi-geo-alt-fill me-2"></i>Mapa del IESTP Huanta
+    </h4>
+    <div class="rounded overflow-hidden shadow" style="border-radius: 12px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.6031830183343!2d-74.24684288574941!3d-12.942661790865342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x914f60d2e80de79d%3A0xb6f6e1646b5c03f3!2sIESTP%20HUANTA!5e0!3m2!1ses!2spe!4v1659294840044!5m2!1ses!2spe" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </div>

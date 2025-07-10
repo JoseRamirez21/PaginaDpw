@@ -201,7 +201,7 @@
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Plan de Estudios</a>
           <ul class="dropdown-menu shadow-lg">
             <li><a class="dropdown-item text-dark" href="malla.html">Malla Curricular</a></li>
-            <li><a class="dropdown-item text-dark" href="portafolio.html">Proyectos y Portafolio</a></li>
+           <li><a class="dropdown-item text-dark" href="proyecto.html">Proyectos y Portafolio</a></li>
           </ul>
         </li>
 
@@ -248,55 +248,66 @@
 
 
 <!-- ADMISION - FECHAS, CRONOGRAMA Y REQUISITOS -->
-<section class="py-5 bg-white" id="admision">
-  <div class="container">
+<section class="py-5 bg-white position-relative overflow-hidden" id="admision">
+  <div class="container position-relative z-1">
+    <!-- TÍTULO -->
     <div class="text-center mb-5" data-aos="fade-up">
-      <h2 class="fw-bold text-primary animate__animated animate__fadeInUp">
+      <h2 class="fw-bold text-primary animate__animated animate__fadeInDown">
         <i class="bi bi-calendar-event me-2"></i>Proceso de Admisión 2025
       </h2>
-      <p class="lead text-secondary">Infórmate sobre las fechas clave, requisitos y pasos para formar parte de la carrera de Diseño y Programación Web.</p>
+      <p class="lead text-secondary animate__animated animate__fadeIn">Descubre cómo formar parte de nuestra carrera profesional en Diseño y Programación Web. ¡Tu futuro comienza aquí!</p>
     </div>
 
-    <div class="row g-4">
-      <!-- INSCRIPCIÓN -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card border-0 shadow-lg h-100 animate__animated animate__zoomIn" style="background-color: #f9f9f9;">
-          <div class="card-body">
-            <h5 class="card-title text-info"><i class="bi bi-pencil-square me-2"></i>Inscripción</h5>
-            <p class="text-muted mb-2">📅 Del 5 de enero al 10 de marzo</p>
-            <p class="mb-0">Los postulantes deben llenar la ficha de inscripción en línea o acercarse a la oficina académica del IES Huanta. La inscripción es gratuita y esencial para iniciar el proceso.</p>
+    <!-- PROCESO DE ADMISION CON ICONOS -->
+    <div class="row g-5 align-items-stretch">
+      <!-- Inscripción -->
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-lg animate__animated animate__zoomIn bg-light rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-pencil-square display-4 text-info mb-3"></i>
+            <h5 class="card-title fw-bold">Inscripción</h5>
+            <p class="text-muted">📅 5 Ene – 10 Mar</p>
+            <p>Regístrate en línea o de manera presencial. Primer paso esencial para postular.</p>
           </div>
         </div>
       </div>
 
-      <!-- ENTREVISTA PERSONAL -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card border-0 shadow-lg h-100 animate__animated animate__zoomIn" style="background-color: #f9f9f9;">
-          <div class="card-body">
-            <h5 class="card-title text-success"><i class="bi bi-person-check me-2"></i>Entrevista Personal</h5>
-            <p class="text-muted mb-2">📅 Del 12 al 15 de marzo</p>
-            <p class="mb-0">Evaluación de habilidades blandas y motivación del postulante a través de entrevistas con el equipo académico. Se valora la actitud, creatividad e interés en tecnología.</p>
+      <!-- Entrevista Personal -->
+      <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-lg animate__animated animate__zoomIn bg-light rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-person-lines-fill display-4 text-success mb-3"></i>
+            <h5 class="card-title fw-bold">Entrevista Personal</h5>
+            <p class="text-muted">📅 12 – 15 Mar</p>
+            <p>Demuestra tu motivación, habilidades blandas y tu vocación tecnológica.</p>
+            <p>Para un proximo licenciamiento</p>
           </div>
         </div>
       </div>
 
-      <!-- MATRÍCULA OFICIAL -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card border-0 shadow-lg h-100 animate__animated animate__zoomIn" style="background-color: #f9f9f9;">
-          <div class="card-body">
-            <h5 class="card-title text-warning"><i class="bi bi-clipboard-check me-2"></i>Matrícula</h5>
-            <p class="text-muted mb-2">📅 Del 18 al 28 de marzo</p>
-            <p class="mb-0">Una vez admitido, el estudiante deberá formalizar su matrícula presentando los documentos requeridos y efectuando el pago correspondiente. Se asignará un código de estudiante.</p>
+      <!-- Matrícula -->
+      <div class="col-md-4" data-aos="flip-right" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-lg animate__animated animate__zoomIn bg-light rounded-4">
+          <div class="card-body text-center">
+            <i class="bi bi-clipboard-check-fill display-4 text-warning mb-3"></i>
+            <h5 class="card-title fw-bold">Matrícula</h5>
+            <p class="text-muted">📅 18 – 28 Mar</p>
+            <p>Formaliza tu ingreso entregando tus documentos y obtén tu código de estudiante.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- CRONOGRAMA GENERAL -->
+    <!-- IMAGEN ADICIONAL -->
+    <div class="text-center my-5" data-aos="fade-up">
+      <img src="img/admision.jpg" class="img-fluid rounded shadow-lg" alt="Proceso de admisión" style="max-height: 400px;">
+    </div>
+
+    <!-- CRONOGRAMA -->
     <div class="mt-5" data-aos="fade-up" data-aos-delay="400">
-      <h4 class="text-center fw-bold text-dark mb-3">📆 Cronograma Anual</h4>
+      <h4 class="text-center fw-bold text-dark mb-4">📆 Cronograma Anual</h4>
       <div class="table-responsive">
-        <table class="table table-hover table-bordered animate__animated animate__fadeIn">
+        <table class="table table-hover table-bordered rounded overflow-hidden animate__animated animate__fadeIn">
           <thead class="table-primary text-center">
             <tr>
               <th>Etapa</th>
@@ -305,47 +316,47 @@
             </tr>
           </thead>
           <tbody class="text-center">
-            <tr>
-              <td>Inscripción</td>
-              <td>05 Ene – 10 Mar</td>
-              <td>Presencial / Virtual</td>
-            </tr>
-            <tr>
-              <td>Entrevista</td>
-              <td>12 Mar – 15 Mar</td>
-              <td>Presencial</td>
-            </tr>
-            <tr>
-              <td>Matrícula</td>
-              <td>18 Mar – 28 Mar</td>
-              <td>Presencial</td>
-            </tr>
-            <tr>
-              <td>Inicio de clases</td>
-              <td>01 Abril</td>
-              <td>Presencial</td>
-            </tr>
+            <tr><td>Inscripción</td><td>05 Ene – 10 Mar</td><td>Presencial / Virtual</td></tr>
+            <tr><td>Entrevista</td><td>12 – 15 Mar</td><td>Presencial</td></tr>
+            <tr><td>Matrícula</td><td>18 – 28 Mar</td><td>Presencial</td></tr>
+            <tr><td>Inicio de clases</td><td>01 Abril</td><td>Presencial</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- REQUISITOS PARA POSTULAR -->
+    <!-- REQUISITOS -->
     <div class="mt-5" data-aos="fade-up" data-aos-delay="500">
       <h4 class="fw-bold text-dark mb-4"><i class="bi bi-file-earmark-text me-2"></i>Requisitos para Postular</h4>
-      <ul class="list-group list-group-flush animate__animated animate__fadeInUp">
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Ficha de inscripción llenada correctamente.</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Copia del DNI (ambos lados).</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado original de estudios secundarios concluidos.</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Recibo de pago por derecho de inscripción.</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>2 fotografías tamaño carnet (fondo blanco).</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Compromiso de participación en entrevista personal.</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Declaración jurada de no tener antecedentes penales (mayores de edad).</li>
-        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Formulario de consentimiento informado (menores de edad).</li>
-      </ul>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush animate__animated animate__fadeInLeft">
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Ficha de inscripción completa.</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Copia del DNI (ambos lados).</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado de estudios secundarios concluidos.</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>2 fotografías tamaño carnet (fondo blanco).</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush animate__animated animate__fadeInRight">
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Declaración jurada (mayores de edad).</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Formulario de consentimiento (menores de edad).</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Compromiso para entrevista personal.</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Recibo de pago por derecho de inscripción.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTÓN DE INSCRIPCIÓN -->
+    <div class="text-center mt-5" data-aos="zoom-in" data-aos-delay="600">
+      <a href="#" class="btn btn-primary btn-lg shadow-lg px-5 py-2">
+        <i class="bi bi-send-fill me-2"></i>¡Inscríbete Ahora!
+      </a>
     </div>
   </div>
 </section>
+
 
 
 

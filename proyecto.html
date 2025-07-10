@@ -201,7 +201,7 @@
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Plan de Estudios</a>
           <ul class="dropdown-menu shadow-lg">
             <li><a class="dropdown-item text-dark" href="malla.html">Malla Curricular</a></li>
-            <li><a class="dropdown-item text-dark" href="portafolio.html">Proyectos y Portafolio</a></li>
+            <li><a class="dropdown-item text-dark" href="proyecto.html">Proyectos y Portafolio</a></li>
           </ul>
         </li>
 
@@ -247,12 +247,33 @@
 </nav>
 
 <!-- PROYECTOS Y PORTAFOLIO DE ESTUDIANTES -->
-<section class="py-5" id="proyectos" style="background: linear-gradient(to right, #f0f4f8, #ffffff);">
+<section class="py-5" id="proyectos" style="background: linear-gradient(to right, #e8f1f9, #ffffff);">
   <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <h2 class="fw-bold text-primary animate__animated animate__fadeInDown"><i class="bi bi-folder2-open me-2"></i>Proyectos y Portafolio</h2>
-      <p class="text-muted lead animate__animated animate__fadeInUp">Conoce una muestra del talento de nuestros estudiantes a través de diversos proyectos: desde plataformas web hasta aplicaciones móviles, diseños digitales, soluciones de marketing y más.</p>
+    <div class="text-center mb-5" data-aos="fade-down">
+      <h2 class="fw-bold text-gradient animate__animated animate__fadeInDown">
+        <i class="bi bi-folder2-open me-2 text-primary"></i>
+        <span style="background: linear-gradient(to right, #0d6efd, #6610f2); -webkit-background-clip: text; color: transparent;">
+          Proyectos y Portafolio
+        </span>
+      </h2>
+      <p class="text-muted fs-5 px-3 px-md-5 animate__animated animate__fadeInUp" style="max-width: 800px; margin: 0 auto;">
+        🚀 Descubre el talento de nuestros estudiantes a través de increíbles proyectos web, aplicaciones móviles, diseño digital, soluciones de e-commerce y más, desarrollados con pasión, innovación y tecnología actual.
+      </p>
     </div>
+
+    <!-- Puedes colocar tus tarjetas de proyecto aquí -->
+  </div>
+
+  <!-- ESTILO EXTRA PARA TÍTULO DEGRADADO -->
+  <style>
+    .text-gradient {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</section>
+
 
     <div class="row g-4">
       <!-- Tarjetas de proyecto -->
@@ -260,7 +281,7 @@
       <!-- Proyecto 1 -->
       <div class="col-md-4" data-aos="zoom-in">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto1.jpg" class="card-img-top" alt="E-commerce">
+          <img src="img/proyecto1.jpg" class="card-img-top" alt="E-commerce" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-primary">Tienda Online Responsive</h5>
             <p class="card-text small">Proyecto de comercio electrónico con carrito de compras, login y gestión de productos usando PHP y MySQL.</p>
@@ -271,7 +292,7 @@
       <!-- Proyecto 2 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-movil.jpg" class="card-img-top" alt="App Móvil">
+          <img src="img/proyecto-movil.jpg" class="card-img-top" alt="App Móvil" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-success">App de Agenda Personal</h5>
             <p class="card-text small">Aplicación móvil desarrollada con Android Studio para gestionar tareas diarias y recordatorios importantes.</p>
@@ -282,7 +303,7 @@
       <!-- Proyecto 3 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-diseno.jpg" class="card-img-top" alt="Diseño UI/UX">
+          <img src="img/proyecto-diseno.jpg" class="card-img-top" alt="Diseño UI/UX" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-info">Mockup de Aplicación</h5>
             <p class="card-text small">Diseño de interfaz de usuario con Figma, centrado en la experiencia del usuario para una app de turismo local.</p>
@@ -293,7 +314,7 @@
       <!-- Proyecto 4 -->
       <div class="col-md-4" data-aos="zoom-in">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-backend.jpg" class="card-img-top" alt="Backend">
+          <img src="img/proyecto-backend.jpg" class="card-img-top" alt="Backend" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-danger">Sistema de Inventario</h5>
             <p class="card-text small">Backoffice completo para controlar stock, usuarios y reportes. Hecho con Laravel y MySQL.</p>
@@ -304,7 +325,7 @@
       <!-- Proyecto 5 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-marketing.jpg" class="card-img-top" alt="Marketing Digital">
+          <img src="img/proyecto-marketing.jpg" class="card-img-top" alt="Marketing Digital" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-warning">Campaña en Redes Sociales</h5>
             <p class="card-text small">Estrategia de marketing digital con branding, creación de contenido y análisis de engagement para emprendimientos locales.</p>
@@ -315,7 +336,7 @@
       <!-- Proyecto 6 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-integrador.jpg" class="card-img-top" alt="Proyecto Integrador">
+          <img src="img/proyecto-integrador.jpg" class="card-img-top" alt="Proyecto Integrador" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-secondary">Sistema Web de Biblioteca</h5>
             <p class="card-text small">Proyecto integrador con frontend, backend, base de datos y diseño UI/UX para la gestión digital de bibliotecas académicas.</p>
@@ -326,7 +347,7 @@
       <!-- Proyecto 7 -->
       <div class="col-md-4" data-aos="zoom-in">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-seguridad.jpg" class="card-img-top" alt="Seguridad Web">
+          <img src="img/proyecto-seguridad.jpg" class="card-img-top" alt="Seguridad Web" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-dark">Simulador de Seguridad Web</h5>
             <p class="card-text small">Proyecto que analiza vulnerabilidades básicas en sitios y enseña prácticas seguras como hashing de contraseñas y validación.</p>
@@ -337,7 +358,7 @@
       <!-- Proyecto 8 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-landing.jpg" class="card-img-top" alt="Landing Page">
+          <img src="img/proyecto-landing.jpg" class="card-img-top" alt="Landing Page" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-primary">Landing Page para Startup</h5>
             <p class="card-text small">Página de presentación para startups con animaciones, formularios de contacto y diseño moderno con Bootstrap y JS.</p>
@@ -348,7 +369,7 @@
       <!-- Proyecto 9 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card h-100 border-0 shadow-lg project-card">
-          <img src="img/proyecto-crud.jpg" class="card-img-top" alt="CRUD Estudiantes">
+          <img src="img/proyecto-crud.jpg" class="card-img-top" alt="CRUD Estudiantes" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title text-success">Sistema CRUD de Estudiantes</h5>
             <p class="card-text small">Sistema para registrar, actualizar y eliminar datos de estudiantes con validaciones, alertas y responsive design.</p>

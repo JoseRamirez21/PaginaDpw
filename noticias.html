@@ -249,10 +249,31 @@
 
 
 <!-- Noticias y Eventos con Imágenes -->
+<!-- Noticias y Eventos con Imágenes -->
 <section class="py-5 bg-white" id="noticias-eventos">
+  <style>
+    .card-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card-title {
+      text-align: center;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+
   <div class="container">
     <!-- TÍTULO -->
-    <div class="text-center mb-5" data-aos="fade-down">
+    <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
       <h2 class="fw-bold text-primary animate__animated animate__fadeInUp">📰 Noticias y Eventos</h2>
       <p class="text-muted" style="max-width: 750px; margin: auto;">
         Mantente actualizado con nuestras últimas noticias y participa en las actividades más impactantes del mundo tecnológico.
@@ -262,14 +283,11 @@
 
     <!-- NOTICIAS -->
     <div class="row gy-4 mb-5">
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="card shadow-sm border-0 h-100">
-         <div class="text-center">
-  <img src="img/noticia1.jpg" 
-       alt="Noticia HTML6" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: auto; width: 300px;">
-</div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
+          <div class="text-center">
+            <img src="img/noticia1.jpg" alt="Noticia HTML6" class="img-fluid rounded shadow" style="width: 300px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-primary"><i class="bi bi-globe2 me-2"></i>HTML6 en desarrollo</h5>
             <p class="card-text text-muted">El futuro del desarrollo web trae nuevas etiquetas semánticas para mejorar la accesibilidad y experiencia de usuario.</p>
@@ -277,14 +295,11 @@
         </div>
       </div>
 
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="card shadow-sm border-0 h-100">
-             <div class="text-center">
-  <img src="img/noticia2.jpg" 
-       alt="Noticia IA" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: auto; width: 300px;">
-</div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
+          <div class="text-center">
+            <img src="img/noticia2.jpg" alt="Noticia IA" class="img-fluid rounded shadow" style="width: 300px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-primary"><i class="bi bi-robot me-2"></i>IA aplicada en clases</h5>
             <p class="card-text text-muted">Estudiantes integran herramientas como ChatGPT y Copilot en sus proyectos de programación y diseño web.</p>
@@ -292,14 +307,11 @@
         </div>
       </div>
 
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="card shadow-sm border-0 h-100">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
           <div class="text-center">
-  <img src="img/noticia3.jpg" 
-       alt="Apps Institucionales" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: auto; width: 300px;">
-</div>
+            <img src="img/noticia3.jpg" alt="Apps Institucionales" class="img-fluid rounded shadow" style="width: 300px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-primary"><i class="bi bi-phone me-2"></i>Lanzamiento de App institucional</h5>
             <p class="card-text text-muted">Nuestros alumnos desarrollaron una aplicación para facilitar la gestión académica en dispositivos móviles.</p>
@@ -307,14 +319,11 @@
         </div>
       </div>
 
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="card shadow-sm border-0 h-100">
-           <div class="text-center">
-  <img src="img/noticia4.jpg" 
-       alt="Convenios Laborales" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: auto; width: 300px;">
-</div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
+          <div class="text-center">
+            <img src="img/noticia4.jpg" alt="Convenios Laborales" class="img-fluid rounded shadow" style="width: 300px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-primary"><i class="bi bi-briefcase-fill me-2"></i>Ampliación de convenios laborales</h5>
             <p class="card-text text-muted">Más de 10 empresas se suman a nuestra bolsa de prácticas preprofesionales 2025.</p>
@@ -325,14 +334,11 @@
 
     <!-- EVENTOS -->
     <div class="row gy-4">
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="card shadow-sm border-0 h-100">
-         <div class="text-center">
-  <img src="img/evento1.jpg" 
-       alt="Feria de Proyecto" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: auto; width: 300px;">
-</div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
+          <div class="text-center">
+            <img src="img/evento1.jpg" alt="Feria de Proyecto" class="img-fluid rounded shadow" style="width: 300px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-success"><i class="bi bi-display me-2"></i>Feria de Proyectos Web 2024</h5>
             <p class="card-text text-muted">Los mejores proyectos de frontend, backend y diseño UX fueron expuestos ante jurado especializado y empresas locales.</p>
@@ -340,14 +346,11 @@
         </div>
       </div>
 
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="card shadow-sm border-0 h-100">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
           <div class="text-center">
-  <img src="img/evento2.jpg" 
-       alt="Full stack" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: 220px; width: 300px;">
-</div>
+            <img src="img/evento2.jpg" alt="Full stack" class="img-fluid rounded shadow" style="width: 300px; height: 220px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-success"><i class="bi bi-lightning-charge-fill me-2"></i>Bootcamp Full Stack</h5>
             <p class="card-text text-muted">Una semana intensiva de desarrollo con HTML, CSS, JavaScript, PHP y MySQL. Ideal para potenciar habilidades.</p>
@@ -355,14 +358,11 @@
         </div>
       </div>
 
-      <div class="col-md-6" data-aos="fade-right">
-        <div class="card shadow-sm border-0 h-100">
-           <div class="text-center">
-  <img src="img/evento3.jpg" 
-       alt="Ciberseguridad" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: 220px; width: 300px;">
-</div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
+          <div class="text-center">
+            <img src="img/evento3.jpg" alt="Ciberseguridad" class="img-fluid rounded shadow" style="width: 300px; height: 220px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-success"><i class="bi bi-shield-lock-fill me-2"></i>Taller de Ciberseguridad</h5>
             <p class="card-text text-muted">Expertos del sector enseñan a proteger aplicaciones y bases de datos en entornos web reales.</p>
@@ -370,14 +370,11 @@
         </div>
       </div>
 
-      <div class="col-md-6" data-aos="fade-left">
-        <div class="card shadow-sm border-0 h-100">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card shadow-sm border-0 h-100 animate__animated animate__zoomIn">
           <div class="text-center">
-  <img src="img/evento4.jpg" 
-       alt="Hackaton DPW" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%; height: 220px; width: 300px;">
-</div>
+            <img src="img/evento4.jpg" alt="Hackaton DPW" class="img-fluid rounded shadow" style="width: 300px; height: 220px;">
+          </div>
           <div class="card-body">
             <h5 class="card-title text-success"><i class="bi bi-controller me-2"></i>Hackathon IESTP</h5>
             <p class="card-text text-muted">Equipos de estudiantes desarrollan aplicaciones innovadoras en 48 horas bajo presión real de tiempo y recursos.</p>
@@ -388,13 +385,12 @@
 
     <!-- CTA -->
     <div class="text-center mt-5" data-aos="zoom-in">
-      <a href="#galeria-eventos" class="btn btn-outline-primary px-5 py-2 rounded-pill shadow-sm">
+      <a href="#galeria-eventos" class="btn btn-outline-primary px-5 py-2 rounded-pill shadow-sm animate__animated animate__pulse animate__infinite">
         Ver galería de eventos
       </a>
     </div>
   </div>
 </section>
-
 
 
 
@@ -466,5 +462,21 @@
   AOS.init({ duration: 1000, once: false });
 </script>
 
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- AOS (Animate On Scroll) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+
+<!-- Al final del body -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,         // ❗ Para que funcione al bajar y subir
+    duration: 1000,      // Duración de cada animación (en ms)
+    offset: 100,         // Distancia desde el borde inferior al hacer scroll
+    easing: 'ease-in-out'
+  });
+</script>
 
 </html>

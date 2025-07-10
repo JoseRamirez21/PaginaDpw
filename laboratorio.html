@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño y Programación Web - IES Huanta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- AOS Animation -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Bootstrap Icons (si no los tienes aún) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
+  <style>
+  
+
+    body {
+      background-color: var(--color-primario);
+      color: var(--color-texto);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .topbar {
+      background-color: var(--color-secundario);
+      font-size: 14px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .topbar span,
+    .topbar a {
+      color: #cbd5e1;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #0ea5e9, #2563eb);
+      padding: 14px 0;
+      box-shadow: var(--sombra);
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+      padding: 10px 18px;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .dropdown:hover > .nav-link {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--color-acento);
+      border-radius: 6px;
+    }
+
+    
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+      color: #e2e8f0;
+      transition: 0.3s;
+      padding: 10px 15px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+      background-color: var(--color-hover);
+      color: #fff;
+      border-radius: 6px;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    footer h5 {
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      color: var(--color-acento);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #334155;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 14px;
+      color: #94a3b8;
+      text-align: center;
+      .dropdown-menu {
+    left: auto !important;
+    right: 0;
+  }
+
+  /* Opcional: para alinear el texto más a la izquierda dentro del menú */
+  .dropdown-item {
+    text-align: left;
+  }
+    }
+  </style>
+</head>
+
+<body>
+ 
+<!-- Topbar -->
+<div class="topbar py-2" style="background-color: #d1d5db; border-bottom: 1px solid #1f2937; font-weight: 500; letter-spacing: 0.5px; color: #1f2937;">
+  <div class="container text-center">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
+      <span>
+        <i class="bi bi-telephone" style="color:#16a34a;"></i> 
+        <strong style="color: #1f2937;">(066) 322296</strong>
+      </span>
+      <span>
+        <i class="bi bi-geo-alt" style="color:#dc2626;"></i> 
+        <strong style="color: #1f2937;">Jr. Córdova Nº 650</strong>
+      </span>
+      <span>
+        <i class="bi bi-envelope" style="color:#2563eb;"></i> 
+        <strong style="color: #1f2937;">contactos@iestphuanta.edu.pe</strong>
+      </span>
+      <a href="#" class="fs-5" style="color: #1f2937;">
+        <i class="bi bi-facebook" style="color:#1877f2;"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<body>
+  
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background: linear-gradient(90deg, #0d47a1, #1976d2); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- LOGO A LA IZQUIERDA SIN MÁRGENES -->
+    <a class="navbar-brand text-white d-flex align-items-center gap-2 ms-2" href="index.html">
+      <img src="img/logo.png" alt="Logo IES Huanta" height="50">
+      <strong>DPWeb - IES Huanta</strong>
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENÚ CENTRADO -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center" style="font-weight: 600;">
+        <!-- MENÚ 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Inicio</a>
+          <ul class="dropdown-menu shadow-lg">
+            <li><a class="dropdown-item text-dark" href="presentacion.html">Presentación</a></li>
+            <li><a class="dropdown-item text-dark" href="noticias.html">Noticias y Eventos</a></li>
+            <li><a class="dropdown-item text-dark" href="testimonio.html">Testimonios</a></li>
+            <li><a class="dropdown-item text-dark" href="laboratorio.html">Laboratorios y Recursos</a></li>
+          </ul>
+        </li>
+
+        <!-- MENÚ 2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">La Carrera</a>
+          <ul class="dropdown-menu shadow-lg">
+            <li><a class="dropdown-item text-dark" href="historia.html">Historia</a></li>
+            <li><a class="dropdown-item text-dark" href="mision.html">Misión, Visión y Objetivos</a></li>
+            <li><a class="dropdown-item text-dark" href="perfil.html">Perfil del Egresado</a></li>
+          </ul>
+        </li>
+
+        <!-- MENÚ 3 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Plan de Estudios</a>
+          <ul class="dropdown-menu shadow-lg">
+            <li><a class="dropdown-item text-dark" href="malla.html">Malla Curricular</a></li>
+            <li><a class="dropdown-item text-dark" href="portafolio.html">Proyectos y Portafolio</a></li>
+          </ul>
+        </li>
+
+        <!-- MENÚ 4 -->
+        <li class="nav-item ">
+          <a class="nav-link  text-white" href="docentes.html" >Equipo Académico</a>
+          <ul class="dropdown-menu shadow-lg">
+        
+          </ul>
+        </li>
+
+        <!-- MENÚ 5 -->
+        <li class="nav-item ">
+          <a class="nav-link  text-white" href="admision.html"  >Admisión</a>
+          <ul class="dropdown-menu shadow-lg">
+           
+          </ul>
+        </li>
+
+        <!-- MENÚ 6 -->
+        <li class="nav-item ">
+          <a class="nav-link  text-white" href="informacion.html">Información Útil</a>
+          <ul class="dropdown-menu shadow-lg">
+           
+          </ul>
+        </li>
+
+        <!-- MENÚ 7 -->
+        <li class="nav-item">
+          <a class="nav-link text-white" href="galeria.html">Galería</a>
+        </li>
+
+        <!-- MENÚ 8 -->
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="institucion.html" >Institución</a>
+          <ul class="dropdown-menu shadow-lg">
+          
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Laboratorios y Recursos (2 por fila) -->
+<section class="py-5 bg-white" id="laboratorios">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold text-primary" style="font-size: 2.5rem;">⚙️ Laboratorios y Recursos</h2>
+      <p class="text-muted" style="font-size: 1.1rem; max-width: 750px; margin: auto;">
+        Espacios y herramientas de vanguardia que fortalecen tu formación técnica en desarrollo web.
+      </p>
+      <hr class="mx-auto" style="width: 90px; border-top: 3px solid #0d47a1;">
+    </div>
+
+    <div class="row g-4">
+      <!-- Laboratorio Web -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="text-center">
+  <img src="img/lab-web.jpg" 
+       alt="Lab Web" 
+       class="img-fluid rounded shadow" 
+       style="max-width: 100%; height: 220px; width: 300px;">
+</div>
+          <div class="card-body">
+            <h5 class="text-primary fw-semibold">💻 Laboratorio Web</h5>
+            <p class="text-muted small">Equipado para prácticas de HTML, CSS, JavaScript y React.js.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laboratorio Diseño -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="text-center">
+  <img src="img/lab-diseno.jpg" 
+       alt="Lab diseño" 
+       class="img-fluid rounded shadow" 
+       style="max-width: 100%; height: 220px; width: 300px;">
+</div>
+          <div class="card-body">
+            <h5 class="text-primary fw-semibold">🎨 Laboratorio de Diseño</h5>
+            <p class="text-muted small">Con Figma, Adobe XD, Illustrator y monitores HD para UI/UX.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laboratorio Redes -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card h-100 shadow-sm border-0">
+         <div class="text-center">
+  <img src="img/lab-redes.jpg" 
+       alt="Lab Redes" 
+       class="img-fluid rounded shadow" 
+       style="max-width: 100%; height: 220px; width: 300px;">
+</div>
+          <div class="card-body">
+            <h5 class="text-primary fw-semibold">🌐 Laboratorio de Redes</h5>
+            <p class="text-muted small">Prácticas de conexión, servidores locales, redes LAN y cloud.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servidor -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="text-center">
+  <img src="img/servidor.jpg" 
+       alt="Servidor" 
+       class="img-fluid rounded shadow" 
+       style="max-width: 100%; height: 220px; width: 300px;">
+</div>
+          <div class="card-body">
+            <h5 class="text-primary fw-semibold">🖥️ Servidor Institucional</h5>
+            <p class="text-muted small">Ambiente virtualizado para alojar proyectos web y bases de datos MySQL.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recurso: Internet -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card h-100 shadow-sm border-0 text-center py-4">
+          <i class="bi bi-wifi fs-1 text-info"></i>
+          <h6 class="mt-3 text-primary">Internet de Alta Velocidad</h6>
+          <p class="text-muted small">Fibra óptica para desarrollo, investigación y conexión cloud.</p>
+        </div>
+      </div>
+
+      <!-- Recurso: Software -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 shadow-sm border-0 text-center py-4">
+          <i class="bi bi-code-square fs-1 text-success"></i>
+          <h6 class="mt-3 text-primary">Software Profesional</h6>
+          <p class="text-muted small">VS Code, XAMPP, GitHub, Laravel, Node.js y más.</p>
+        </div>
+      </div>
+
+      <!-- Recurso: Aulas -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card h-100 shadow-sm border-0 text-center py-4">
+          <i class="bi bi-display fs-1 text-warning"></i>
+          <h6 class="mt-3 text-primary">Aulas Multimedia</h6>
+          <p class="text-muted small">Espacios con proyectores, sonido y pantallas digitales.</p>
+        </div>
+      </div>
+
+      <!-- Recurso: Plataformas -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 shadow-sm border-0 text-center py-4">
+          <i class="bi bi-cloud-arrow-down fs-1 text-danger"></i>
+          <h6 class="mt-3 text-primary">Plataformas Educativas</h6>
+          <p class="text-muted small">Classroom, Moodle, Trello, Git y acceso a servicios en la nube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+<!-- Footer Profesional Centrado -->
+<footer style="background-color: #0a192f; color: #e2e8f0; padding: 60px 0 30px; border-top: 4px solid #2563eb; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div class="container d-flex flex-column align-items-center">
+    
+    <!-- Contenido centrado -->
+    <div class="row w-100 text-center justify-content-center" style="max-width: 960px;">
+      
+      <!-- Institución -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #38bdf8;">IESP HUANTA</h5>
+        <p style="line-height: 1.6;">
+          Formando profesionales técnicos con visión internacional y competencias digitales para el futuro.
+        </p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #38bdf8;">Contacto</h5>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Jr. Ayacucho N.º 301 - Huanta, Ayacucho</p>
+        <p class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i> contactos@iestphuanta.edu.pe</p>
+        <p class="mb-0"><i class="bi bi-telephone-fill me-2 text-primary"></i> (066) 322296</p>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3" style="color: #38bdf8;">Síguenos</h5>
+        <a href="https://facebook.com/iestphuanta" target="_blank" class="d-block mb-2 text-decoration-none" style="color: #e2e8f0;">
+          <i class="bi bi-facebook me-2 text-primary"></i>Facebook
+        </a>
+        <a href="https://iestphuanta.edu.pe" target="_blank" class="d-block text-decoration-none" style="color: #e2e8f0;">
+          <i class="bi bi-globe me-2 text-primary"></i>Página Oficial
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Línea de copyright -->
+    <div class="text-center mt-4 pt-3 w-100" style="border-top: 1px solid #334155; font-size: 14px; color: #94a3b8; max-width: 960px;">
+      &copy; 2025 IESP HUANTA — Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // duración de la animación (milisegundos)
+    once: false      // true = solo una vez; false = cada vez que haces scroll
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: false });
+</script>
+
+
+</html>
